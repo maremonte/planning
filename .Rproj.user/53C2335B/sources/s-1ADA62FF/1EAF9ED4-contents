@@ -1,0 +1,60 @@
+---
+title: "Val di Funes"
+description: |
+  A short description of the post.
+author:
+  - name: Nora Jones
+    url: https://example.com/norajones
+date: 2022-04-09
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
+```{r}
+library(XML)
+library(leaflet)
+myfunction <- function(myfile){
+  pfile <- htmlTreeParse(file = myfile, 
+                         error = function(...) {}, useInternalNodes = T)
+  coords <- xpathSApply(pfile, path = "//trkpt", xmlAttrs)
+  gps <- data.frame(t(coords))
+  gps$lat <- as.numeric(gps$lat)
+  gps$lon <- as.numeric(gps$lon)
+  return(gps)
+}
+gps1 <- myfunction("gampenalme.gpx")
+gps2 <- myfunction("malghe.gpx")
+
+leaflet(gps1) %>% 
+  addTiles() %>% 
+  addPolylines(data = gps1, 
+               lng = ~lon, 
+               lat = ~lat,
+               color = "#DF536B", opacity = 0.7)  %>% 
+  addPolylines(data = gps2, 
+               lng = ~lon, 
+               lat = ~lat,
+               color = "#377EB8", opacity = 0.7) %>%
+  
+  # Add tiles
+  addProviderTiles("OpenStreetMap.Mapnik", group = "OpenStreetMap") %>%
+  addProviderTiles("OpenTopoMap", group = "OpenTopoMap") %>%
+  addProviderTiles("Esri.WorldImagery", group = "Satellite") %>%
+  
+  # Layers control
+  addLayersControl(position = 'bottomright',
+                   baseGroups = c("OpenStreetMap", "OpenTopoMap", "Satellite"),
+                   options = layersControlOptions(collapsed = FALSE)) 
+```
+

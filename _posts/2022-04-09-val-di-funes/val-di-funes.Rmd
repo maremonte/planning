@@ -1,5 +1,5 @@
 ---
-title: "Val di Funnes"
+title: "Val di Funes"
 description: |
   A short description of the post.
 author:
