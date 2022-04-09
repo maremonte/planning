@@ -4,7 +4,7 @@ categories:
   - alto adige
   - val di funes
 description: |
-  My first post
+  Caminades tranquil·les per la Val di Funes
 author:
   - name: Mar
 date: 2022-04-09
@@ -17,6 +17,11 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Rutes estretes del web [`Destinazione Dolomiti`](https://destinazionedolomiti.com/):  
+
+- [<span style="color:#DF536B">Da Malga Zanes verso Gampenalme e Kaserillalm</span>]( https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/): 8.6km, +380m, E    
+- [<span style="color:#377EB8">Il giro delle Malghe delle Odle</span>]( https://destinazionedolomiti.com/2021/05/21/magica-val-di-funes-il-giro-delle-malghe-delle-odle/): 9.1km, +350m, E 
 
 ```{r}
 library(XML)
