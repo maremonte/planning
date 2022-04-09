@@ -1,5 +1,6 @@
 ---
 title: "My Website"
+tags: [web, jekyll]
 ---
 
 Hello, Website!
@@ -18,8 +19,8 @@ myfunction <- function(myfile){
   gps$lon <- as.numeric(gps$lon)
   return(gps)
 }
-gps1 <- myfunction("gampenalme.gpx")
-gps2 <- myfunction("malghe.gpx")
+gps1 <- myfunction("docs/gampenalme.gpx")
+gps2 <- myfunction("docs/malghe.gpx")
 
 leaflet(gps1) %>% 
   addTiles() %>% 
