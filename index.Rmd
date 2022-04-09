@@ -1,6 +1,5 @@
 ---
-title: "Planner"
-output: html_document
+title: "My Website"
 ---
 
-Routes planner
+Hello, Website!
