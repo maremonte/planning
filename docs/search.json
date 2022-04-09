@@ -3,17 +3,17 @@
     {
       "path": "about.html",
       "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "description": "Routes planner",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-04-09T18:15:06+02:00"
+      "last_modified": "2022-04-09T18:31:59+02:00"
     },
     {
       "path": "index.html",
-      "title": "Routes planning",
+      "title": "Planning",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-04-09T18:15:07+02:00"
+      "last_modified": "2022-04-09T18:32:18+02:00"
     }
   ],
   "collections": ["posts/posts.json"]
