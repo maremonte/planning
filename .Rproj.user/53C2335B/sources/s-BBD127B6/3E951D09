@@ -3,7 +3,7 @@
     "path": "~/GitHub/planning/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "212696512",
+    "hash": "2139832466",
     "contents": "",
     "dirty": false,
     "created": 1649527531701.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "5,0",
+        "cursorPosition": "1,13",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1649521936,
+    "lastKnownWriteTime": 1649529201,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649521936,
+    "last_content_update": 1649529201112,
     "read_only": false,
     "read_only_alternatives": []
 }

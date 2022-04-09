@@ -10,10 +10,10 @@
     },
     {
       "path": "index.html",
-      "title": "Planning",
+      "title": "Posts",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2022-04-09T20:23:59+02:00"
+      "last_modified": "2022-04-09T20:33:23+02:00"
     }
   ],
   "collections": ["posts/posts.json"]
