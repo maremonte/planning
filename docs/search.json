@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-04-09T18:15:06+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Routes planning",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-04-09T18:15:07+02:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
