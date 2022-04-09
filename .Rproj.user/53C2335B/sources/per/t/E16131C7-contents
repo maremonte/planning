@@ -63,7 +63,7 @@ leaflet(gps1, width = "100%") %>%
 
 # Gampenalm e Kaserillalm 
 
-Malga Zannes (1680 m) &rightarrow; sentiero nº6 (1h 15') &rightarrow; sentiero nº35 (direcció `Gampenalm`, 1h 10') &rightarrow; **Malga Gampen** (2062 m) &rightarrow; sentiero nº31A &rightarrow; sentiero nº32 &rightarrow; sentiero nº40 (40') &rightarrow; **Kaserill Alm** (1920 m) &rightarrow; sentiero nº32 (1h) &rightarrow; Malga Zannes (1680 m)
+Malga Zannes (1680 m) &rightarrow; sentiero nº6 (1h 15') &rightarrow; sentiero nº35 (direcció `Gampenalm`, 1h 10') &rightarrow; **Malga Gampen** (2062 m) &rightarrow; sentiero nº31A &rightarrow; sentiero nº32 &rightarrow (40') &rightarrow; **Kaserill Alm** (1920 m) &rightarrow; sentiero nº32 (1h) &rightarrow; Malga Zannes (1680 m)
   
 - Source: https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/
 
@@ -73,3 +73,7 @@ Malga Zannes (1680 m) &rightarrow; sentiero nº6 (1h 15') &rightarrow; sentiero 
 Malga Zannes (1680 m) &rightarrow; sentiero nº36 (1h 30') &rightarrow; **Glatschalm** (1902 m) &rightarrow; sentiero nº36 (30') &rightarrow; sentiero nº35 (40') &rightarrow; **Malga Casnago** (2000 m) &rightarrow; **Geisleralm-Rifugio delle Odle** (1996 m) &rightarrow; sentiero nº36 (1h) &rightarrow; **Dusslerhutte** (1782 m) &rightarrow; sentiero nº36 (40') &rightarrow; Malga Zannes (1680 m)
   
 - Source:  https://destinazionedolomiti.com/2021/05/21/magica-val-di-funes-il-giro-delle-malghe-delle-odle/
+
+---
+
+**Last update:** `r format(as.Date(file.info(list.files()[grep("Rmd", list.files())])$mtime), "%d %b %Y")`<br />

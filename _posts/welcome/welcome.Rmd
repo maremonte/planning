@@ -1,8 +1,7 @@
 ---
-title: "Welcome to Routes planning"
+title: "Welcome to Route planning"
 description: |
-  Welcome to my new blog "Routes planning". I hope you enjoy 
-  reading what I have to say!
+  Welcome to my new blog "Route planning"
 author:
   - name: Mar 
     url: https://example.com/mar

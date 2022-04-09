@@ -3,24 +3,24 @@
     "path": "~/GitHub/planning/_posts/welcome/welcome.Rmd",
     "project_path": "_posts/welcome/welcome.Rmd",
     "type": "r_markdown",
-    "hash": "885319557",
+    "hash": "3115354017",
     "contents": "",
-    "dirty": false,
+    "dirty": true,
     "created": 1649522085976.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "30,0",
-        "scrollLine": "1"
+        "cursorPosition": "9,16",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1649522273,
+    "lastKnownWriteTime": 1649527581,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1649522273081,
+    "last_content_update": 1649528114486,
     "read_only": false,
     "read_only_alternatives": []
 }
