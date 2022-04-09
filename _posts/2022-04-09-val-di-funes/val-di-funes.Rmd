@@ -20,8 +20,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Rutes estretes del web [`Destinazione Dolomiti`](https://destinazionedolomiti.com/):  
 
-- [<span style="color:#DF536B">Da Malga Zanes verso Gampenalme e Kaserillalm</span>]( https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/): 8.6km, +380m, E    
-- [<span style="color:#377EB8">Il giro delle Malghe delle Odle</span>]( https://destinazionedolomiti.com/2021/05/21/magica-val-di-funes-il-giro-delle-malghe-delle-odle/): 9.1km, +350m, E 
+- [<span style="color:#DF536B">Da Malga Zanes verso Gampenalm e Kaserillalm</span>][Gampenalm e Kaserillalm]: 8.6km, +380m, 3h 15', E    
+- [<span style="color:#377EB8">Il giro delle Malghe delle Odle</span>][Giro delle Malghe]: 9.1km, +350m, 3h 20', E 
 
 ```{r}
 library(XML)
@@ -60,3 +60,16 @@ leaflet(gps1, width = "100%") %>%
                    options = layersControlOptions(collapsed = FALSE)) 
 ```
 
+
+# Gampenalm e Kaserillalm 
+
+Malga Zannes (1680 m) &rightarrow; sentiero nº6 (1h 15') &rightarrow; sentiero nº35 (direcció `Gampenalm`, 1h 10') &rightarrow; **Malga Gampen** (2062 m) &rightarrow; sentiero nº31A &rightarrow; sentiero nº32 &rightarrow; sentiero nº40 (40') &rightarrow; **Kaserill Alm** (1920 m) &rightarrow; sentiero nº32 (1h) &rightarrow; Malga Zannes (1680 m)
+  
+- Source: https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/
+
+
+# Giro delle Malghe
+
+Malga Zannes (1680 m) &rightarrow; sentiero nº36 (1h 30') &rightarrow; **Glatschalm** (1902 m) &rightarrow; sentiero nº36 (30') &rightarrow; sentiero nº35 (40') &rightarrow; **Malga Casnago** (2000 m) &rightarrow; **Geisleralm-Rifugio delle Odle** (1996 m) &rightarrow; sentiero nº36 (1h) &rightarrow; **Dusslerhutte** (1782 m) &rightarrow; sentiero nº36 (40') &rightarrow; Malga Zannes (1680 m)
+  
+- Source:  https://destinazionedolomiti.com/2021/05/21/magica-val-di-funes-il-giro-delle-malghe-delle-odle/
