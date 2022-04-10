@@ -65,7 +65,9 @@ leaflet(gps1, width = "100%") %>%
 
 Malga Zannes (1680 m) &rightarrow; sentiero nº6 (1h 15') &rightarrow; sentiero nº35 (direcció `Gampenalm`, 1h 10') &rightarrow; **Malga Gampen** (2062 m) &rightarrow; sentiero nº31A &rightarrow; sentiero nº32 &rightarrow (40') &rightarrow; **Kaserill Alm** (1920 m) &rightarrow; sentiero nº32 (1h) &rightarrow; Malga Zannes (1680 m)
   
-- Source: https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/
+- Source: 
+  * https://destinazionedolomiti.com/2021/05/14/val-di-funes-il-regno-della-pace-da-malga-zannes-verso-gampenalm-e-kaserill-alm/  
+  * https://maremonte.github.io/routes/posts/2022-04-10-kaserillalm/
 
 
 # Giro delle Malghe

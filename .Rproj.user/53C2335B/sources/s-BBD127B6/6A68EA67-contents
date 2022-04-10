@@ -1,9 +1,0 @@
----
-title: "About this blog"
-description: |
-  Route planner
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
