@@ -1,5 +1,11 @@
+<style>
+.leaflet {
+    margin: 0;
+}
+</style>
 
-```{r, echo=FALSE, warning=FALSE}
+
+```{r, echo=FALSE, warning=FALSE, out.width = '2120%', fig.align = 'left'}
 library(XML)
 library(leaflet)
 myfunction <- function(myfile){
@@ -24,7 +30,7 @@ for(i in 2:length(fls)){
 }
 
 
-leaflet(gps1, width = "100%") %>% 
+leaflet(gps1, width = "210%", height = 950) %>% 
   addTiles() %>% 
   addPolylines(data = gps1, 
                lng = ~lon, 
