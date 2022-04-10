@@ -1,5 +1,6 @@
 *.gpx
 _posts*
+site_libs*
 *.c*
 *.n*
 *.R*
