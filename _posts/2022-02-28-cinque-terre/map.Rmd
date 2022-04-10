@@ -1,17 +1,5 @@
----
-title: "Posts"
-site: distill::distill_website
-listing: posts
----
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-<br> </br>
-
-```{r}
+```{r, echo=FALSE, warning=FALSE}
 library(XML)
 library(leaflet)
 myfunction <- function(myfile){
@@ -23,25 +11,33 @@ myfunction <- function(myfile){
   gps$lon <- as.numeric(gps$lon)
   return(gps)
 }
-fls <- list.files("docs/", recursive = TRUE, full.names = TRUE)
-fls <- fls[grep(".gpx", fls)]
+gps1 <- myfunction("alta-via-delle-5-terre.gpx")
+gps2 <- myfunction("alta-via-de-golfo.gpx")
 
+fls <- list.files(full.names = TRUE)
+fls <- fls[grep(".gpx", fls)]
+fls <- fls[grep("verde", fls)]
 i <- 1
-gps1 <- myfunction(fls[i])
+gps3 <- myfunction(fls[i])
 for(i in 2:length(fls)){
-  gps1 <- rbind(gps1, myfunction(fls[i]))
+  gps3 <- rbind(gps3, myfunction(fls[i]))
 }
-markers <- read.csv("markers.csv")
-colnames(markers)[1] <- "lat"
+
+
 leaflet(gps1, width = "100%") %>% 
   addTiles() %>% 
   addPolylines(data = gps1, 
                lng = ~lon, 
                lat = ~lat,
-               color = "#DF536B", opacity = 0.7) %>%
-  addMarkers(lat = markers$lat, lng = markers$lon, 
-             popup = paste0('<a href="', markers$link, '//">', markers$title , '</a>'),
-    options = popupOptions(closeButton = FALSE)) %>%
+               color = "#DF536B", opacity = 0.7)  %>% 
+  addPolylines(data = gps2, 
+               lng = ~lon, 
+               lat = ~lat,
+               color = "#377EB8", opacity = 0.7)  %>% 
+  addPolylines(data = gps3, 
+               lng = ~lon, 
+               lat = ~lat,
+               color = "#984EA3", opacity = 0.7) %>%
   
   # Add tiles
   addProviderTiles("OpenStreetMap.Mapnik", group = "OpenStreetMap") %>%
@@ -53,3 +49,4 @@ leaflet(gps1, width = "100%") %>%
                    baseGroups = c("OpenStreetMap", "OpenTopoMap", "Satellite"),
                    options = layersControlOptions(collapsed = FALSE)) 
 ```
+

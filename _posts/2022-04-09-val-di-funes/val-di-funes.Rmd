@@ -3,6 +3,7 @@ title: "Val di Funes"
 categories:
   - alto adige
   - val di funes
+  - walk
 description: |
   Caminades tranquil·les per la Val di Funes
 author:
