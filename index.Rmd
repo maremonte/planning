@@ -31,7 +31,7 @@ colnames(markers)[1] <- "lat"
 m <- leaflet(width = "100%") %>% 
   addTiles() %>%
     addMarkers(lat = markers$lat, lng = markers$lon, 
-               popup = paste0('<a href="', markers$link, '//">', markers$title, '</a>'),
+               popup = paste0('<a href="', markers$link, '">', markers$title, '</a>'),
                options = popupOptions(closeButton = FALSE)) %>%
   
   # Add tiles
