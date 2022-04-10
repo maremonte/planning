@@ -25,23 +25,14 @@ myfunction <- function(myfile){
 }
 fls <- list.files("docs/", recursive = TRUE, full.names = TRUE)
 fls <- fls[grep(".gpx", fls)]
-
-i <- 1
-gps1 <- myfunction(fls[i])
-for(i in 2:length(fls)){
-  gps1 <- rbind(gps1, myfunction(fls[i]))
-}
 markers <- read.csv("markers.csv")
 colnames(markers)[1] <- "lat"
-leaflet(gps1, width = "100%") %>% 
-  addTiles() %>% 
-  addPolylines(data = gps1, 
-               lng = ~lon, 
-               lat = ~lat,
-               color = "#DF536B", opacity = 0.7) %>%
-  addMarkers(lat = markers$lat, lng = markers$lon, 
-             popup = paste0('<a href="', markers$link, '//">', markers$title , '</a>'),
-    options = popupOptions(closeButton = FALSE)) %>%
+
+m <- leaflet(width = "100%") %>% 
+  addTiles() %>%
+    addMarkers(lat = markers$lat, lng = markers$lon, 
+               popup = paste0('<a href="', markers$link, '//">', markers$title, '</a>'),
+               options = popupOptions(closeButton = FALSE)) %>%
   
   # Add tiles
   addProviderTiles("OpenStreetMap.Mapnik", group = "OpenStreetMap") %>%
@@ -52,4 +43,15 @@ leaflet(gps1, width = "100%") %>%
   addLayersControl(position = 'bottomright',
                    baseGroups = c("OpenStreetMap", "OpenTopoMap", "Satellite"),
                    options = layersControlOptions(collapsed = FALSE)) 
+
+for(i in seq(length(fls))){
+  gps1 <- myfunction(fls[i])
+  m <- m %>% 
+    addPolylines(data = gps1, 
+                 lng = ~lon, 
+                 lat = ~lat,
+                 color = "#DF536B", opacity = 0.7)
+}
+
+m
 ```
