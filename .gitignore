@@ -1,6 +1,7 @@
 *.gpx
 _posts*
 .Rproj*
+*.Rproj
 .n*
 *.csv
 _site.yml
