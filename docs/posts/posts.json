@@ -20,23 +20,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Route planning",
-    "description": "Welcome to my new blog \"Route planning\"",
-    "author": [
-      {
-        "name": "Mar",
-        "url": "https://example.com/mar"
-      }
-    ],
-    "date": "2022-04-09",
-    "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing,\r\nnative to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2022-04-09T20:23:54+02:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2022-02-28-cinque-terre/",
     "title": "Cinque Terre",
     "description": "A short description of the post.",
